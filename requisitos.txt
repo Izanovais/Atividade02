@@ -1,0 +1,37 @@
+Regras de Negócios
+
+RN01 - Cadastro de usuários
+Descrição: O sistema só pode permitir o cadastro de usuários com e-mail válido (ex.: @gmail.com, @senai.br).
+Relacionadas: RN02, RN03
+
+RN02 - Confirmação de pagamento
+Descrição: Antes de liberar o produto ou serviço, o pagamento precisa ser confirmado.
+Relacionadas: RN01, RN03
+
+RN03 - Limite de pedidos
+Descrição: Cada cliente pode ter no máximo 5 pedidos ativos ao mesmo tempo. 
+Relacionadas: RN01, RN02
+
+
+Requisitos Funcionais
+
+RF01 - Login do usuário
+Descrição: O sistema deve permitir que o usuário entre usando e-mail e senha.
+Relacionadas: RN01
+Relacionados Funcionais: RF02, RF03
+Relacionados Não Funcionais: RNF01
+
+RF02 - Mostrar produtos
+Descrição: O sistema deve mostrar todos os produtos ou serviços disponíveis para compra (ex.: lista igual a de um site de e-commerce).
+Relacionadas: RN02
+Relacionados Funcionais: RF01
+Relacionados Não Funcionais: RNF02
+
+
+Requisitos Não Funcionais
+
+RNF01 - Disponibilidade
+Descrição: O sistema precisa funcionar 24 horas por dia, todos os dias da semana.
+
+RNF02 - Performance
+Descrição: Cada ação no sistema deve responder em até 2 segundos.
